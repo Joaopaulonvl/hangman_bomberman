@@ -7,7 +7,8 @@ $("document").ready(function(){
     $("#startButton").on("click", function(){
         clickStart.play();
         startCoin.play();
-        $(this).prop("disabled", true)
+        $(this).prop("disabled", true);
+        $("h2").fadeOut(300);
         setTimeout(function(){
             $("h1").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
             $("h1").text("PREPARE-SE!");
@@ -20,7 +21,7 @@ $("document").ready(function(){
         language.play();
         $(this).prop("disabled", true)
         setTimeout (function(){
-            window.location.href = "../en-US/index.html";
+            window.location.href = "../index.html";
         }, 1000);
     });
 });

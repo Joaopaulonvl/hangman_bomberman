@@ -1,7 +1,7 @@
 $("document").ready(function(){
-    var language = new Audio("/sounds/change.mp3");
-    var clickStart = new Audio("/sounds/clickstart.mp3");
-    var startCoin = new Audio("/sounds/startcoin.mp3");
+    var language = new Audio("sounds/change.mp3");
+    var clickStart = new Audio("sounds/clickstart.mp3");
+    var startCoin = new Audio("sounds/startcoin.mp3");
     isFullScreen = false;
     var elem = document.documentElement;
     $("#startButton").on("click", function(){
@@ -21,7 +21,7 @@ $("document").ready(function(){
         language.play();
         $(this).prop("disabled", true)
         setTimeout (function(){
-            window.location.href = "/pt-BR/index.html";
+            window.location.href = "pt-BR/index.html";
         }, 1000);
     });
 });

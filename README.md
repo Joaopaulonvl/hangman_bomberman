@@ -5,8 +5,8 @@ Este projeto é um jogo da forca que possui elementos da franquia **Bomberman**.
 Desenvolvido por João Paulo Naval.
 
 ## Imagens
-`![Screenshot](images/Screenshot_mainMenu.png)`
-`![Screenshot](images/Screenshot_game.png)`
+`![Screenshot](./images/Screenshot_mainMenu.png)`
+`![Screenshot](./images/Screenshot_game.png)`
 
 ## 🕹️ Como Jogar
 Acesse a versão online: **[CLIQUE AQUI PARA JOGAR](https://joaopaulonvl.github.io/hangman_bomberman/)**
@@ -35,7 +35,7 @@ Este projeto foi construído utilizando as seguintes tecnologias:
 * [JavaScript (ES6+)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - Lógica do jogo e manipulação de áudio.
 * [jQuery](https://jquery.com/) - Manipulação do DOM e eventos de interface.
 * [JSON](https://www.json.org/json-en.html) - Gerenciamento do banco de palavras e dicas.
-* [Aseprite] (https://www.aseprite.org/) - Software utilizado para criação, edição e animação dos sprites do Bomberman e da bomba (como a pose idle, vitória, derrota e explosão).
+* [Aseprite](https://www.aseprite.org/) - Software utilizado para criação, edição e animação dos sprites do Bomberman e da bomba (como a pose idle, vitória, derrota e explosão).
 
 ---
 

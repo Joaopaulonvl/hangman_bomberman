@@ -1,6 +1,6 @@
 $("document").ready(function(){
     $("#backButton").on("click", function(){
-        var clickReturn = new Audio("../sounds/clickreturn.mp3");
+        var clickReturn = new Audio("/sounds/clickreturn.mp3");
         clickReturn.play();
         setTimeout (function(){
             window.location.href = "index.html";
@@ -22,16 +22,16 @@ $(document).ready(function() {
     var errors = 0;
     var errorLimit = 6;
 
-    var soundWin = new Audio("../sounds/youwin.mp3");
-    var soundLose = new Audio("../sounds/youlose.mp3");
-    var soundReset = new Audio("../sounds/reset.mp3");
-    var characterDefeat = new Audio("../sounds/bombermands.mp3");
-    var characterWin = new Audio("../sounds/bomberfly.mp3");
-    var bombExplosion = new Audio("../sounds/bombexplosion.mp3");
-    var bombDefeat = new Audio("../sounds/bombdefeat.mp3");
+    var soundWin = new Audio("/sounds/youwin.mp3");
+    var soundLose = new Audio("/sounds/youlose.mp3");
+    var soundReset = new Audio("/sounds/reset.mp3");
+    var characterDefeat = new Audio("/sounds/bombermands.mp3");
+    var characterWin = new Audio("/sounds/bomberfly.mp3");
+    var bombExplosion = new Audio("/sounds/bombexplosion.mp3");
+    var bombDefeat = new Audio("/sounds/bombdefeat.mp3");
 
-    var soundRKey = new Audio("../sounds/rightanswer.mp3");
-    var soundEKey = new Audio("../sounds/wronganswer.mp3");
+    var soundRKey = new Audio("/sounds/rightanswer.mp3");
+    var soundEKey = new Audio("/sounds/wronganswer.mp3");
 
     function newWord() {
         $.getJSON("words_en.json", function(data){
@@ -76,10 +76,10 @@ $(document).ready(function() {
             setTimeout(function(){
                 $("#word-display").css("color", "");
             }, 3000)
-            $("#bomb").attr("src", "../images/bombdefeat.gif").css({"width": "50px", "height": "50px"});
+            $("#bomb").attr("src", "/images/bombdefeat.gif").css({"width": "50px", "height": "50px"});
             setTimeout(function(){
                 characterWin.play();
-                $("#mainCharacter").attr("src", "../images/win.gif").css({"width": "150px", "height": "150px"});
+                $("#mainCharacter").attr("src", "/images/win.gif").css({"width": "150px", "height": "150px"});
             },2000);
             setTimeout(function(){
                 soundWin.volume = 0.3;
@@ -115,9 +115,9 @@ $(document).ready(function() {
             }, 2900);
             $("#keyboard").addClass("keyboard-locked");
             bombExplosion.play();
-            $("#bomb").attr("src", "../images/bombexplosion.gif").css({"position":"relative", "z-index":"1"});
+            $("#bomb").attr("src", "/images/bombexplosion.gif").css({"position":"relative", "z-index":"1"});
             setTimeout(function(){
-                $("#mainCharacter").attr("src", "../images/bombermandefeat.gif");
+                $("#mainCharacter").attr("src", "/images/bombermandefeat.gif");
                 $("p").text("BOMBERMAN HAS DEFEATED :(");
                 characterDefeat.play();
                 setTimeout(function(){
@@ -140,8 +140,8 @@ $(document).ready(function() {
             $("p").text("GUESS THE WORD TO SAVE BOMBERMAN!");
             $("h2").text("ERRORS: 0/6");
             
-            $("#bomb").attr("src", "../images/bomb.gif").css({"width": "", "height": "", "position": "", "z-index": ""});
-            $("#mainCharacter").attr("src", "../images/Bomberman.gif").css({"width": "", "height": ""});
+            $("#bomb").attr("src", "/images/bomb.gif").css({"width": "", "height": "", "position": "", "z-index": ""});
+            $("#mainCharacter").attr("src", "/images/Bomberman.gif").css({"width": "", "height": ""});
             
             $("#keyboard").removeClass("keyboard-locked");
             $(".key").removeClass("locked").css("background-color", "");
@@ -170,7 +170,7 @@ $(document).ready(function() {
         }
     }
 
-    var keySound = new Audio ("../sounds/click.mp3");
+    var keySound = new Audio ("/sounds/click.mp3");
 
     $(".key").on("click", function() {
         const selectedKey = $(this).data("key");

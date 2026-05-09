@@ -5,8 +5,8 @@ Este projeto é um jogo da forca que possui elementos da franquia **Bomberman**.
 Desenvolvido por João Paulo Naval.
 
 ## Imagens
-`![Menu Principal](images/Screenshot mainMenu.png)`
-`![Jogo](images/Screenshot game.png)`
+`![Screenshot](images/Screenshot_mainMenu.png)`
+`![Screenshot](images/Screenshot_game.png)`
 
 ## 🕹️ Como Jogar
 Acesse a versão online: **[CLIQUE AQUI PARA JOGAR](https://joaopaulonvl.github.io/hangman_bomberman/)**

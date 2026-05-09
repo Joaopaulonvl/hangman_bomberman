@@ -3,7 +3,7 @@ $("document").ready(function(){
         var clickReturn = new Audio("../sounds/clickreturn.mp3");
         clickReturn.play();
         setTimeout (function(){
-            window.location.href = "../index.html";
+            window.location.href = "index.html";
         }, 1000);
     });
 });
